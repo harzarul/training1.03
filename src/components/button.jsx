@@ -1,8 +1,8 @@
 import React from 'react'
 
-const button = ({title}) => {
+const button = ({title,style}) => {
   return (
-    <button className='flex justify-center items-center py-[.7rem] px-[1.2rem] rounded-full button__bg text-yellow border-solid hover:border-[1px] border-yellow'>
+    <button className={`${style} flex justify-center items-center rounded-full button__bg font-sans text-yellow border-solid hover:border-[1px] border-yellow`}>
         {title}
     </button>
   )

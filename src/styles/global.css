@@ -32,3 +32,15 @@ ul {
     background-size: cover;
     background-position: top;
 }
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay2 {
+    background-color: rgba(26, 26, 26, 0.5);
+    background-size: cover;
+    background-position: center;
+}

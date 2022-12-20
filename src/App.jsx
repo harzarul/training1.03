@@ -6,31 +6,34 @@ import { Navbar, Hero, Broker, Auctions, Works, Collections, Categories, Creator
 const App = () => {
   return (
     <div className={`w-full overflow-hidden main__background text-white`}>
-      <div className={`${styles.flexCenter}`}>
-        <div className={`${styles.paddingsX} ${styles.boxWidth}`}>
-          <Navbar/>
-          <Auctions/>
-          <Works/>
-          <Collections/>
+      <div className='overlay'>
+        <div className={`${styles.flexCenter}`}>
+          <div className={`${styles.paddingsX} ${styles.boxWidth}`}>
+            <Navbar/>
+            <Hero/>
+            <Broker/>
+            <Auctions/>
+            <Works/>
+            <Collections/>
+          </div>
         </div>
-      </div>
 
-      <div className={`${styles.flexCenter}`}>
-        <div className='w-full'>
-          <Categories/>
+        <div className={`${styles.flexCenter}`}>
+          <div className='w-full bg-dimRed my-[4rem]'>
+            <Creators/>
+          </div>
         </div>
-      </div>
 
-      <div className={`${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth} ${styles.paddingsX}`}>
-          <Creators/>
-          <CTA/>
+        <div className={`${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth} ${styles.paddingsX}`}>
+            <CTA/>
+          </div>
         </div>
-      </div>
 
-       <div className={`${styles.flexCenter}`}>
-        <div className='w-full'>
-          <Footer/>
+        <div className={`${styles.flexCenter}`}>
+          <div className='w-full overlay'>
+            <Footer/>
+          </div>
         </div>
       </div>
     </div>
