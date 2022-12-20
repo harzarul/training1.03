@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;600&family=Work+Sans:ital,wght@0,300;0,600;1,300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Oxanium', serif;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.main__background {
+    background-image: url(../assets//abstractBg.jpg);
+    background-size: repeat;
+    background-position: top;
+}
+
+.button__bg {
+    background-color: rgba(167, 167, 167, 0.4);
+    background-size: cover;
+    background-position: top;
+}
